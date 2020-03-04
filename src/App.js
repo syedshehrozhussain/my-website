@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
+import Header from './sections/header/Header';
+import Body from './sections/body/Body';
+//import Footer from './sections/footer/Footer';
 
 function App() {
-  return (
-    <div className="App">
-        <p>
-            Welcome to Syed Shehroz Hussain's Space!
-        </p>
-        <p>
-            UNDER CONSTRUCTION!
-        </p>
-    </div>
-  );
+    return (
+        <>
+            <Header></Header>
+            <Body></Body>
+        </>
+    );
 }
 
 export default App;
