@@ -1,4 +1,5 @@
 {
     "id": 1,
-    "title": "this is the Title 1"
+    "title": "this is the Title 1",
+    "text": "This is the body. But I need a better way to import text from a txt file for the blog."
 }
