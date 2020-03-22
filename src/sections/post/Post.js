@@ -1,14 +1,25 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import SomeImage from '../../content/0/0.jpg';
-import SomeText from '../../content/1/1.txt';
-import SomePostDetails from '../../content/1/1.json';
 
+import SomeImage from '../../content/post1/image1.jpg';
+import SomeTextUrl from '../../content/post1/text1.txt';
+import SomePostDetails from '../../content/post1/data1.json';
 
 function Post() {
+    const [textBody, setTextBody] = useState('Loading text...');
+
+    useEffect(() => {
+        const getTextFromFile = async () => {
+            let response = await fetch(SomeTextUrl);
+            let text = await response.text();
+            setTextBody(text);
+        };
+        getTextFromFile();
+    }, [textBody]);
+
     return (
         <>
             <Row className="mb-3">
@@ -21,9 +32,9 @@ function Post() {
                     <Card>
                         <Card.Body>
                             <Card.Title className="d-flex justify-content-center">{SomePostDetails.title}</Card.Title>
-                            <Card.Text>
-                                {SomePostDetails.text}
-                            </Card.Text>
+                            {textBody.split("\n").map((paragraph, key) => {
+                                return <Card.Text key={key} dangerouslySetInnerHTML={{__html: paragraph}}></Card.Text>
+                            })}
                         </Card.Body>
                     </Card>
                 </Col>
