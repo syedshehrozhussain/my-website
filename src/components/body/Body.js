@@ -15,7 +15,7 @@ function Body() {
         let postObjectNumber = 'post_' + i;
         let postObject = {};
         postObject[postObjectNumber] = {};
-        Object.keys(postsIndex).forEach((key, index) => {
+        Object.keys(postsIndex).forEach((key) => {
             const postNumber = key.substring(key.indexOf('_') + 1);
             if (postNumber === i.toString()) {
                 let tempKeyValuePair = {};

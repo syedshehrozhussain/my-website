@@ -1,0 +1,11 @@
+Yes, this is an old picture, from 2016. Time flies. Hang tight till I find a decent picture of myself.
+
+While you wait, here is an introduction of myself.
+
+I am Syed Shehroz Hussain. <strong>Syed</strong> is a title showing a particular lineage. <strong>Shehroz</strong> is sort of my first and preferred name. <strong>Hussain</strong> is my last name or family name. A lot of people know me as <strong>Ozzy</strong>, but I am slowly tilting towards bringing <strong>"Shehroz"</strong> back. So, if you can pronounce it and remember it, feel free to call me <strong>Shehroz</strong>.
+
+Now, a little about what I do. I am a Senior Software Engineer currently working with Salesforce focusing on front-end web development. Current skillsets revolve around <em>Javascript, HTML, CSS, Node, etc</em>. I am still a work in progress and want to grow more in my career. So reach out if you have some cool new technology I should look into.
+
+The question <em>Who Am I?</em> is honestly something I have been trying to answer for well over a decade. So, for now, this introduction should suffice. Check back later in the year to see if I figured out more about myself and decided to share it with the world. Till then, enjoy all my <a href="shehroz.com/all-posts">ramblings</a>. To understand what this blog is all about (or trying to do), check out the <a href="shehroz.com//about-this-blog">About This Blog</a> section.
+
+If you ever want to get in touch with me, please send me an email at <a href="mailto:shehrozhussain@gmail.com?subject=About Shehroz's blog">shehrozhussain@gmail.com</a>. Feel free to share the links to any of my posts if you think they would resonate with someone else.

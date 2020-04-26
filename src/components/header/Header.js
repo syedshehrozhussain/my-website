@@ -18,11 +18,11 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#link">Latest Post</Nav.Link>
-                    <Nav.Link href="#link">Previous Posts</Nav.Link>
+                    <Nav.Link href="/latest-post">Latest Post</Nav.Link>
+                    <Nav.Link href="/all-posts">All Posts</Nav.Link>
                 </Nav>
                 <Navbar.Text>
-                    About: <a href="#link">This Blog</a> | <a href="/aboutme">Me</a>
+                    About: <a href="/about-this-blog">This Blog</a> | <a href="/about-me">Me</a>
                 </Navbar.Text>
             </Navbar.Collapse>
         </Navbar>

@@ -4,10 +4,7 @@ import Body from '../components/body/Body';
 
 function Homepage() {
     return (
-        <>
-            <Header></Header>
-            <Body></Body>
-        </>
+        <Body></Body>
     );
 }
 
