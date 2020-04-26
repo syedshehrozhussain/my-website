@@ -14,10 +14,10 @@ function App() {
             <Header></Header>
             <Switch>
                 <Route exact path="/" component={Homepage} />
-                <Route path="/about-me" component={Aboutme} />
-                <Route path="" component={Aboutblog} />
-                <Route path="/latest-post" component={Latestpost} />
-                <Route path="/all-posts" component={Allposts} />
+                <Route exact path="/about-me" component={Aboutme} />
+                <Route exact path="/about-this-blog" component={Aboutblog} />
+                <Route exact path="/latest-post" component={Latestpost} />
+                <Route exact path="/all-posts" component={Allposts} />
             </Switch>
         </>
         

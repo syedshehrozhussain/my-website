@@ -1,34 +1,18 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import text from '../content/aboutme/text.txt';
-import image from '../content/aboutme/image.jpg';
 
-function Aboutme() {
-    const [textBody, setTextBody] = useState('Loading text...');
-
-    useEffect(() => {
-        const getTextFromFile = async () => {
-            const aboutMeText = text;
-            let response = await fetch(aboutMeText);
-            let textBody = await response.text();
-            setTextBody(textBody);
-        };
-        getTextFromFile();
-    }, [textBody]);
-
+function Latestposts() {
     return (
         <>
             <Row className="mb-5 mt-3">
                 <Col xs={{span: 8, offset: 2}}>
                     <Card>
-                        <Card.Img variant="top" src={image} />
+                        {/* <Card.Img variant="top" src={image} /> */}
                         <Card.Body>
-                            <Card.Title className="d-flex justify-content-center font-weight-bold">Who am I?</Card.Title>
-                            {textBody.split("\n").map((paragraph, key) => {
-                                return <Card.Text key={key} dangerouslySetInnerHTML={{__html: paragraph}}></Card.Text>
-                            })}
+                            <Card.Title className="d-flex justify-content-center font-weight-bold">Latest Post</Card.Title>
+                            <Card.Text>This section will only show the latest post, so it will be easy to just find the latest content</Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -37,4 +21,4 @@ function Aboutme() {
     );
 }
 
-export default Aboutme;
+export default Latestposts;
