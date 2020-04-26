@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from './sections/header/Header';
-import Body from './sections/body/Body';
-//import Footer from './sections/footer/Footer';
+import { Switch, Route } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import Aboutme from './pages/Aboutme'
 
 function App() {
     return (
-        <>
-            <Header></Header>
-            <Body></Body>
-        </>
+        <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route path="/aboutme" component={Aboutme} />
+            {/* <Route component={PageNotFound} /> */}
+        </Switch>
     );
 }
 

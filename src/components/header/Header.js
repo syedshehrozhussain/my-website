@@ -22,7 +22,7 @@ function Header() {
                     <Nav.Link href="#link">Previous Posts</Nav.Link>
                 </Nav>
                 <Navbar.Text>
-                    About: <a href="#link">This Blog</a> | <a href="#link">Me</a>
+                    About: <a href="#link">This Blog</a> | <a href="/aboutme">Me</a>
                 </Navbar.Text>
             </Navbar.Collapse>
         </Navbar>
